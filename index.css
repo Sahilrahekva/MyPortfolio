@@ -1,0 +1,541 @@
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.logo {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.navbar {
+
+    font-size: 25px;
+    /* margin-top: 50px; */
+    justify-content: space-between;
+    display: flex;
+
+}
+
+#active {
+    color: rgb(145, 18, 43);
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+
+}
+
+.navbar ul li {
+    margin: 15px 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li a:hover{
+    text-decoration: none;
+    color: rgb(145, 18, 43);
+}
+
+.header2 {
+    padding-top: 200px;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+}
+.icon p{
+    padding: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    color: gainsboro;
+}
+.icon p:hover{
+    text-shadow: none !important;
+    box-sizing: border-box !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    -webkit-transform: scale(1.1) !important;
+    transform: scale(1.1) !important;
+    z-index: 2;
+}
+
+#ic{
+
+    display: flex;
+     margin-left: 480px;
+
+}
+
+#ic p{
+    padding: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    color: gainsboro;
+}
+
+#ic p:hover{
+    text-shadow: none !important;
+    box-sizing: border-box !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    -webkit-transform: scale(1.1) !important;
+    transform: scale(1.1) !important;
+    z-index: 2;
+}
+
+#head{
+    /* background-image: url(https://pps.whatsapp.net/v/t61.24694-24/347076257_1432339584196894_6775492695625685598_n.jpg?ccb=11-4&oh=01_AdSjBQaKIat823Xl6bXP9K35F7_Xy4w7AonxL3DT6Wj9IQ&oe=647AE7C4);
+   */
+   /* background-image: url(https://e1.pxfuel.com/desktop-wallpaper/1019/635/desktop-wallpaper-anime-boy-studying-posted-by-ryan-tremblay-boy-studying.jpg);
+   */
+   /* background-image: url(); */
+
+/*       
+background-image: url(https://img.freepik.com/premium-photo/young-man_52137-30180.jpg);
+     */
+
+     background-image: url(./up_photo-removebg-preview.png);
+
+   background-repeat:no-repeat;
+    /* background-size:cover;
+    height:100vh; */
+    background-position: right;
+
+
+}
+
+
+.am:hover {
+    text-shadow: none !important;
+    box-sizing: border-box !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    -webkit-transform: scale(1.1) !important;
+    transform: scale(1.1) !important;
+    z-index: 2;
+
+
+}
+
+.ho {
+    /* background-color: rgb(36, 35, 35); */
+    background-color: rgb(54, 54, 54);
+    border: 1px solid black;
+}
+
+.ho:hover {
+    text-shadow: none !important;
+    box-sizing: border-box !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    -webkit-transform: scale(1.1) !important;
+    transform: scale(1.1) !important;
+    z-index: 2;
+    background: rgb(219, 12, 53);
+    color: white;
+
+}
+
+
+#bt1{
+    /* border: 1px solid rgb(240, 4, 4); */
+    border: 1px solid brown;
+}
+
+#bt1:hover{
+    background-color: crimson;
+    transition: all 0.5s;
+}
+
+#bt2{
+    border: 1px solid rgb(47, 4, 240);
+    
+}
+
+#bt2:hover{
+    background-color: rgb(47, 4, 240);
+    transition: all 0.5s;
+}
+
+#text{
+ border-radius: 10px;
+   background-color: rgb(54, 54, 54);
+    color: rgb(129, 126, 126);
+     border: 1px solid  rgb(54, 54, 54) ;
+      padding-left: 8px;
+}
+
+
+
+#ft{
+
+height: 80px;
+ background-color: rgb(54, 54, 54);
+  border-radius: 10px; 
+
+}
+
+.main1{
+        margin-top: 20%;
+         margin-bottom: 10%;
+}
+
+
+
+#click{
+    display: none;
+}
+
+.menu-btn{
+    display: none;
+}
+
+@media screen and (max-width:900px) {
+
+    .header{
+        /* height: 80px;
+    background-color: aquamarine;
+    font-size: 25px;
+    justify-content: space-between; */
+    display: block;
+    text-align: center;
+  
+    }
+    .header ul li a{
+    text-decoration: none;
+    color: white;
+}
+    .header ul{
+        margin-top: 25px;
+        /* display: block; */
+        display: none;
+        background-color: rgb(0, 0, 0);
+       text-shadow: 0,0,0,0.5(rgba(red, green, blue, alpha));
+        transition:all 0.3s ease;
+}
+
+.menu-btn{
+display: block;
+float: right;
+margin-right: 40px;
+}
+
+#click:checked ~ ul{
+
+display: block;
+
+
+}
+
+
+
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   margin: auto;
+}
+
+
+
+.header2 {
+   padding: auto;
+}
+
+.header2{
+    padding-left: 40px;
+}
+
+
+#text{
+ border-radius: 10px;
+   background-color: rgb(54, 54, 54);
+    color: rgb(129, 126, 126);
+     border: 1px solid  rgb(54, 54, 54) ;
+      padding-left: 8px;
+      width: 480px;
+}
+
+
+
+
+#ic{
+
+    padding-left: 180px;
+     margin-left: auto;
+
+}
+
+
+
+    
+}
+
+/* @media screen  and (max-width:500px) {
+
+    .header{
+        display: none;
+    }
+    .header ul{
+        display: none;
+    }
+    
+}
+
+   @media screen  and (max-width:400px) {
+
+    .header{
+        display: block;
+        text-align: center;
+    }
+    .header ul{
+        display: block;
+    }
+    
+} */
+
+
+     @media screen and (max-width:500px) {
+
+        #head{
+            background-image: none;
+
+            /* background-repeat:no-repeat; */
+             /* background-size:cover;
+             height:100vh; */
+             /* background-position: right; */
+         
+        }
+         .menu-btn{
+                     display: block;                  
+                     float: right;
+                     margin-right: 20px;
+                     /* margin-right: 60px; */
+          }
+
+        #harsh{
+            align-items: center;
+        }
+
+    .header{
+        /* height: 80px;
+    background-color: aquamarine;
+    font-size: 25px;
+    justify-content: space-between; */
+    display: block;
+    text-align: center;
+  
+    }
+    .header ul li a{
+    text-decoration: none;
+    color: white;
+}
+    .header ul{
+        margin-top: 25px;
+        /* display: block; */
+        display: none;
+        background-color: rgb(0, 0, 0);
+       text-shadow: 0,0,0,0.5(rgba(red, green, blue, alpha));
+        transition:all 0.3s ease;
+}
+
+.menu-btn{
+display: block;
+float: right;
+margin-right: 20px;
+}
+
+#click:checked ~ ul{
+
+display: block;
+
+
+}
+
+
+
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   margin: auto;
+}
+
+
+
+.header2 {
+   padding: auto;
+}
+
+
+#ic{
+
+    padding-left: 120px;
+     margin-left: auto;
+
+}
+
+
+#text{
+ border-radius: 10px;
+   background-color: rgb(54, 54, 54);
+    color: rgb(129, 126, 126);
+     border: 1px solid  rgb(54, 54, 54) ;
+      padding-left: 8px;
+      width: 480px;
+}
+
+
+
+
+    
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:390px) {
+
+
+    #text{
+ border-radius: 10px;
+   background-color: rgb(54, 54, 54);
+    color: rgb(129, 126, 126);
+     border: 1px solid  rgb(54, 54, 54) ;
+      padding-left: 8px;
+      width: 340px;
+}
+
+#ft{
+
+    width: 340px;
+}
+
+body{
+    align-items: center;
+}
+
+.menu-btn{
+display: block;
+float: right;
+margin-right: 50px;
+}
+
+#click:checked ~ ul{
+
+display: block;
+
+
+}
+
+.header ul{
+        margin-top: 25px;
+        margin-left: 90px;
+        /* display: block; */
+        display: none;
+        background-color: rgb(0, 0, 0);
+       text-shadow: 0,0,0,0.5(rgba(red, green, blue, alpha));
+        transition:all 0.3s ease;
+}
+
+.main1{
+
+margin-top: 10px;
+
+}
+
+
+
+
+}
+
+
+ @media screen and (max-width:500px) {
+
+
+    #text{
+ border-radius: 10px;
+   background-color: rgb(54, 54, 54);
+    color: rgb(129, 126, 126);
+     border: 1px solid  rgb(54, 54, 54) ;
+      padding-left: 8px;
+      width: 340px;
+}
+
+#ft{
+
+    width: 340px;
+}
+
+body{
+    align-items: center;
+}
+
+.menu-btn{
+display: block;
+float: right;
+margin-right: 50px;
+}
+
+#click:checked ~ ul{
+
+display: block;
+
+
+}
+
+.header ul{
+        margin-top: 25px;
+        margin-left: 90px;
+        /* display: block; */
+        display: none;
+        background-color: rgb(0, 0, 0);
+       text-shadow: 0,0,0,0.5(rgba(red, green, blue, alpha));
+        transition:all 0.3s ease;
+}
+
+.main1{
+
+margin-top: 10px;
+
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+

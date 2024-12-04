@@ -1,0 +1,204 @@
+#fo{
+    width: 40%;
+    border: 2px solid rgb(190, 245, 242);
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    margin-top: 5%;
+    background-color: aliceblue;
+}
+
+
+#inphi{
+
+    padding: 20px;
+    margin: 20px;
+
+}
+
+#bt{
+    background-color: green;
+    color: white;
+}
+
+#fo #bt{
+
+    margin-left: 18px;
+
+}
+
+body{
+    background: linear-gradient(to right, rgb(107, 246, 107), rgb(140, 75, 245));
+}
+
+
+    /* resopnsive */
+
+    @media screen and (max-width:600px){
+        
+
+        .navbar{
+            font-size: 25px;
+            display:block ;
+           text-align: center;
+            align-content: space-between;
+            /* width: 100%; */
+        }
+        .navbar ul{
+            display: block;
+           
+        }
+        
+        .navbar ul li{
+            list-style-type: none;
+            padding: 15px 15px;
+        }
+        
+        .navbar ul li a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        
+        
+        .navbar ul li a:hover{
+           color: rgb(25, 197, 228);
+        }
+        
+        
+            }
+
+
+
+
+
+            
+            /* new */
+
+
+
+            
+
+
+#click{
+    display: none;
+}
+
+.menu-btn{
+    display: none;
+}
+
+#btt{
+border: 1px solid rgb(184, 181, 181); 
+padding: 10px 20px;
+ color: white;
+ width: 200px; 
+}
+
+#indo{
+    border: 2px solid white; 
+    background-color: aliceblue;
+     width: 100px; padding: 8px; 
+     color: green; 
+     margin-top: 440px; 
+     margin-left: 200px;
+}
+
+#thai{
+border: 2px solid white;
+ background-color: aliceblue; 
+ width: 90px;
+  padding: 8px; 
+  color: green;
+   margin-top: 100px;
+    margin-left: 200px;
+}
+
+
+@media screen and (max-width:700px) {
+    
+    #agf{
+    align-items: center;
+   padding-right: 400px;
+  
+} 
+
+.navbar{
+
+    font-size: 25px;
+    display: block;
+    text-align: center;
+
+ }
+
+.navbar ul{
+  
+    display: none;
+    
+}
+
+.menu-btn{
+    display: block;
+    color: aliceblue;
+    
+}
+
+#click:checked ~ ul{
+
+    display: block;
+
+}
+
+
+}
+
+
+@media screen and (max-width:390px) {
+    
+    body{
+        align-content: center;
+        /* padding-left: 40px; */
+    }
+
+    #agf{
+    align-items: center;
+   /* padding-right: 400px; */
+        /* display: none; */
+  
+} 
+.input-group{
+    height: 30px;
+    width: 200px;
+    align-items: center;
+    margin-left: 50px;
+    /* margin-left: 30%; */
+    /* display: none; */
+}
+.navbar{
+
+    font-size: 25px;
+    display: block;
+    text-align: center;
+
+ }
+
+.navbar ul{
+  
+    display: none;
+    
+}
+
+.menu-btn{
+    display: block;
+    color: aliceblue;
+    
+}
+
+#click:checked ~ ul{
+
+    display: block;
+
+}
+
+
+}

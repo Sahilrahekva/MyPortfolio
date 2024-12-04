@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            /* font-family: sans-serif; */
+        }
+
+        p {
+            font-family: serif;
+        }
+
+        .btnm {
+            padding-top: 10px;
+        }
+
+        .res {
+            padding-right: 180px;
+            padding-top: 10px;
+            color: rgb(236, 177, 14);
+            font-size: 30px;
+            /* cursor: pointer; */
+        }
+
+
+
+        .logo {
+            /* margin: 15px; */
+            position: relative;
+        }
+
+        #im {
+            height: 120px;
+            width: 120px;
+            /* cursor: pointer; */
+        }
+
+        .navbar {
+
+            font-size: 25px;
+            /* height: 120px; */
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            /* position: relative; */
+        }
+
+        .navbar ul {
+            /* margin: 15px; */
+            /* list-style-type: none; */
+            position: relative;
+            display: flex;
+        }
+
+        .navbar ul li {
+            padding: 15px 20px;
+            list-style-type: none;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+
+            color: white;
+        }
+
+        .navbar ul li a:hover {
+
+
+            color: orange;
+        }
+
+
+
+        .content {
+            padding-top: 120px;
+            margin-left: 8%;
+            font-family: sans-serif;
+        }
+
+        .myimg h1{
+            margin: auto;
+            font-size: 75px;
+             color: rgb(243, 235, 237); 
+        }
+
+        .myimg p{
+            padding: auto;
+        font-size: 22px; 
+        color: white;
+
+        }
+
+        .myimg {
+
+/* 
+            background-image: url("   https://media.istockphoto.com/id/1097744990/photo/italian-pasta-spaghetti-with-meatballs-and-parmesan-cheese-in-black-plate-on-dark-rustic-wood.jpg?s=612x612&w=0&k=20&c=mokZoAi7dtawXKbkZ6qrDR-JW7-SH2si3PPycI3Z0Pg=");
+           */
+/* 
+          background-image: url(https://static.toiimg.com/photo/92620481.cms);
+          */
+
+/* 
+            background-image: url(https://c4.wallpaperflare.com/wallpaper/161/113/135/pizza-fast-food-vegetables-food-wallpaper-preview.jpg);
+
+          */
+
+          background-image: url(https://w0.peakpx.com/wallpaper/141/1008/HD-wallpaper-food-pasta-mushroom-still-life-tomato.jpg);
+         
+         
+            background-repeat: no-repeat;
+            background-size: cover;
+          
+            /* height: 100%;
+            width: 100%; */
+            padding-bottom: 50px;
+        }
+    </style>
+
+    <style>
+        .ho:hover {
+
+            text-shadow: none !important;
+            box-sizing: border-box !important;
+            cursor: pointer !important;
+            transition: all 0.3s ease !important;
+            -webkit-transform: scale(1.1) !important;
+            transform: scale(1.1) !important;
+            z-index: 2;
+            background-color: orange;
+            color: white;
+        }
+    
+        .ho p i{
+            color: orange;
+        }
+
+        .ho p i:hover {
+
+            text-shadow: none !important;
+            box-sizing: border-box !important;
+            cursor: pointer !important;
+            transition: all 0.3s ease !important;
+            -webkit-transform: scale(1.1) !important;
+            transform: scale(1.1) !important;
+            z-index: 2;
+            background-color: orange;
+            color: white;
+            cursor: pointer;
+        }
+
+        .ho i:hover {
+            background-color: orange;
+            color: white;
+            cursor: pointer;
+        }
+
+        .ho i {
+            font-size: 60px;
+            color: orange;
+        }
+
+        .i:hover {
+            text-shadow: none !important;
+            box-sizing: border-box !important;
+            cursor: pointer !important;
+            transition: all 0.3s ease !important;
+            -webkit-transform: scale(1.1) !important;
+            transform: scale(1.1) !important;
+            z-index: 2;
+            
+        }
+    </style>
+
+    <style>
+
+        #mah{
+            align-items: center;
+            padding-left: 20px;
+        }
+
+        #mah a i {
+            font-size: 25px; 
+            margin: 3px;
+            padding: 5px;
+            color: white;
+            background-color: orange;
+            border-radius: 20px;
+        }
+
+        #mah a i:hover{
+            background-color: blue;
+            text-shadow: none !important;
+            box-sizing: border-box !important;
+            cursor: pointer !important;
+            transition: all 0.3s ease !important;
+            -webkit-transform: scale(1.1) !important;
+            transform: scale(1.1) !important;
+            z-index: 2;
+
+        }
+
+        #mh{
+            align-items: center;
+            padding-left: 20px;
+        }
+
+        #mh a i {
+            font-size: 25px; 
+            margin: 3px;
+            padding: 5px;
+            color: white;
+            /* background-color: orange; */
+            border-radius: 20px;
+        }
+
+        #mh a i:hover{
+            background-color: blue;
+            text-shadow: none !important;
+            box-sizing: border-box !important;
+            cursor: pointer !important;
+            transition: all 0.3s ease !important;
+            -webkit-transform: scale(1.1) !important;
+            transform: scale(1.1) !important;
+            z-index: 2;
+
+        }
+
+        #ft{
+            /* background-image: linear-gradient(to right rgb(22, 22, 63) rgb(35, 35, 104)); */
+            background-color: rgb(15, 15, 61);
+            color: white;
+        }
+
+
+    </style>
+
+
+    <style>
+        
+        body{
+            background-color: black;
+            color: aliceblue;
+        }
+        /* .card-body p{
+            color: black;
+        } */
+
+        #click{
+            display: none;
+        }
+
+        .menu-btn{
+            display: none;
+        }
+
+    </style>
+
+
+    <style>
+
+        @media screen and (max-width:700px) {
+/* 
+            #click{
+                    display: block;
+            } */
+
+            .menu-btn{
+                display: block;
+            }
+
+            .navbar {
+
+           
+            
+            display: block;
+           /* align-items: center; */
+          text-align: center;
+          /* margin-top: 5px; */
+
+
+          
+/*          
+            height: 80px;
+           
+            display: flex;
+            justify-content: space-between;
+            background-color: black; */
+
+        }
+
+        .navbar ul{
+            display: none;
+            background-color: black;
+        }
+        
+        .res {
+            /* padding-right: 180px; */
+            /* padding-top: 10px; */
+            /* float: left;
+            color: rgb(236, 177, 14);
+            font-size: 30px; */
+            /* cursor: pointer; */
+            margin-right: 250px;
+        }
+
+        .menu-btn{
+            float: right;
+            margin-right: 80px;
+            top: 0;
+            padding-top: 50px;
+            display: block;
+        }
+        
+        #click:checked ~ ul {
+            display: block;
+            background-color: black;
+        
+
+        }
+
+        /* #click:checked ~ .myimg {
+           margin-top: 200px;
+        } */
+
+        .logo {
+            /* margin: 15px; */
+            
+            position: relative;
+            float: left;
+        }
+
+         
+        }
+
+
+
+
+        @media screen and (max-width:500px) {
+
+            /* #click{
+                    display: block;
+            } */
+
+            .menu-btn{
+                display: block;
+            }
+
+            body{
+                    align-items: center;
+                 margin-right: auto;
+
+            }
+
+            #tre{
+                width: 410px;
+                margin-left: 20px;
+            }
+
+            .navbar {
+
+           
+            
+            display: block;
+           /* align-items: center; */
+          text-align: center;
+          /* margin-top: 5px; */
+
+
+          
+/*          
+            height: 80px;
+           
+            display: flex;
+            justify-content: space-between;
+            background-color: black; */
+
+        }
+
+        .navbar ul{
+            display: none;
+            background-color: black;
+            
+        }
+
+        .navbar ul li a{
+            cursor: pointer;
+        }
+        
+        .res {
+            /* padding-right: 180px; */
+            /* padding-top: 10px; */
+            /* float: left;
+            color: rgb(236, 177, 14);
+            font-size: 30px; */
+            /* cursor: pointer; */
+            margin-right: auto;
+        }
+
+        .menu-btn{
+            float: right;
+            margin-right: 80px;
+            top: 0;
+            padding-top: 50px;
+            display: block;
+        }
+        
+        #click:checked ~ ul {
+            display: block;
+            background-color: black;
+        
+
+        }
+
+        /* #click:checked ~ .myimg {
+           margin-top: 200px;
+        } */
+
+        .logo {
+            /* margin: 15px; */
+            
+            position: relative;
+            float: left;
+        }
+
+         
+        }
+
+
+
+            
+
+
+        
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+
+        <div class="navbar">
+
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <div class="logo i">
+                <img src="https://s.tmimgcdn.com/scr/800x500/212900/spoon-and-fork-restaurant-logo_212966-original.png"
+                    alt="" id="im">
+            </div>
+            <div class="res i">
+                <p>Restorent</p>
+            </div>
+
+            <!-- <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </label> -->
+
+            <ul>
+                <li><a href="food.index.html" style="color: orange;">HOME</a></li>
+                <li><a href="f.about.html">ABOUT</a></li>
+                <li><a href="f.service.html">SERVICE</a></li>
+                <li><a href="f.menu.html">MENU</a></li>
+                <li><a href="f.pages.html">PAGES</a></li>
+                <li><a href="f.contact.html">CONTACT</a></li>
+                <div class="btnm">
+                    <!-- <a href="f.book.table.html" class="btn btn-warning  p-2 i"><b>BOOK A TABLE</b></a> -->
+                    <a href="f.book.table.html" class="btn btn-warning p-2 i"><b>BOOK A TABLE</b></a>
+                </div>
+
+            </ul>
+
+        </div>
+
+
+    </header>
+
+    <main>
+
+        <div class="myimg">
+
+            <div class="content " data-aos="zoom-in-up" data-aos-duration="1500">
+
+                <h1  class="shadow-lg"><b>Enjoy Our <br> Delicious Meal </b></h1>
+
+                <p  class="shadow-lg">
+                    Tempor erat eliter rebum at clita. Diam dolor diam ipsum sit. Aliqu diam <br>
+                    amet diam et eos. Clite erat ipsum et lorem et sit, sed stet lorem sit clita <br>
+                    duo justo magna dolore erat amet.
+                </p>
+
+                <a href="f.book.table.html" class="btn btn-warning p-3 i"><b>BOOK A TABLE</b></a>
+
+            </div>
+        </div>
+
+
+        <div>
+
+            <div class="container first" style="margin-top: 20px;"  >
+                <div class="row">
+                    <div class="col-md-3" data-aos="flip-right" >
+                        <div class="card shadow-lg ho "  style="background-image: linear-gradient(rgb(129, 27, 27),rgb(4, 4, 245));">
+                            <i class="fa-solid fa-user-tie px-4 py-4"></i>
+                            <div class="card-body">
+                                <h3 class="text-dark text-white"><b>Master Chefs</b></h3>
+                                <p class="text-dark text-white">Diam elitr kasd sed elitr sed ipsum justo dolor sed clita amet diam</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3" data-aos="flip-right">
+                        <div class="card shadow-lg ho" style="background-image: linear-gradient(rgb(129, 27, 27),rgb(4, 4, 245));">
+                            <i class="fa-solid fa-utensils px-4 py-4"></i>
+                            <div class="card-body">
+                                <h3 class="text-dark text-white"><b> Quality Food</b></h3>
+                                <p class="text-dark text-white">Diam elitr kasd sed elitr sed ipsum justo dolor sed clita amet diam</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3" data-aos="flip-left">
+                        <div class="card shadow-lg ho" style="background-image: linear-gradient(rgb(129, 27, 27),rgb(4, 4, 245));">
+                            <i class="fa-sharp fa-regular fa-cart-shopping px-4 py-4"></i>
+                            <div class="card-body">
+                                <h3 class="text-dark text-white"><b> Online Order</b></h3>
+                                <p class="text-dark text-white">Diam elitr kasd sed elitr sed ipsum justo dolor sed clita amet diam</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3" data-aos="flip-left">
+                        <div class="card shadow-lg ho" style="background-image: linear-gradient(rgb(129, 27, 27),rgb(4, 4, 245));">
+                            <i class="fa-solid fa-headphones px-4 py-4"></i>
+                            <div class="card-body">
+                                <h3 class="text-dark text-white"><b> 24/7 Service</b></h3>
+                                <p class="text-dark text-white">Diam elitr kasd sed elitr sed ipsum justo dolor sed clita amet diam</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row m-4">
+                            <div class="col-md-8 " data-aos="zoom-in-right">
+                                <div class="card shadow-lg i">
+                                    <img src="https://cdn.vox-cdn.com/thumbor/5d_RtADj8ncnVqh-afV3mU-XQv0=/0x0:1600x1067/1200x900/filters:focal(672x406:928x662)/cdn.vox-cdn.com/uploads/chorus_image/image/57698831/51951042270_78ea1e8590_h.7.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-4 " style="margin-top: 28%;" data-aos="zoom-in-left">
+                                <div class="card shadow-lg i">
+                                    <img src="https://www.spoon-restaurant.com/wp-content/uploads/2022/06/Spoon_cLe_Bonbon-1-scaled.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5 " data-aos="zoom-in-right">
+                                <div class="card shadow-lg i">
+                                    <img src="https://findit-resources.s3.amazonaws.com/forums/1656913081202.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-7 " data-aos="zoom-in-left">
+                                <div class="card shadow-lg i">
+                                    <img src="https://media.istockphoto.com/id/1198049220/photo/who-ordered-this-main.jpg?s=612x612&w=0&k=20&c=OUtMWq5AYjFRFy7jjNztSfZ7w4pEunsYgyf96dc8xQ8="
+                                        alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 " style="padding-left: 7%; padding-top: 2%; margin-bottom: 70px;" data-aos="zoom-in-up">
+
+                        <p style="font-size:30px; color: orange; font-family: cursive;" class="shadow-sm mahi">About us----
+                        </p>
+
+                        <p style="font-size: 40px; font-family: sans-serif;" class="shadow-sm"><b>Welcome to
+                                Restorent</b></p>
+
+                        <p style="font-size: 20px; font-family: serif;" class="shadow-sm">Lorem ipsum dolor, sit amet
+                            consectetur adipisicing elit. Ibeatae officia porro impedit aperiam nisi quis ipsum
+                            consequuntur.</p>
+
+                        <p style="font-size: 20px; font-family: serif;" class="shadow-sm">Lorem ipsum dolor sit amet
+                            consectetur, adipisicing elit. Perspiciatis, repellendus! A commodi quaerat doloribus,
+                            aperiam aliquid quo, officia tenetur dolorem veritatis debitis, ab iusto quisquam sint ipsam
+                            minus sed.</p>
+                
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!-- <p><b style="font-size: 50px; color: orange;">| 15</b>Years of <br> <b>EXPERIENCE</b></p> -->
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p><b style="font-size: 60px; color: orange;">| 15</b></p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="pt-3">Years of <br> <b>EXPERIENCE</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <!-- <p><b style="font-size: 50px; color: orange;">| 50 </b> Populer <br> <b>MASTER CHEFS</b></p> -->
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p><b style="font-size: 60px; color: orange;">| 50</b></p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="pt-3">Popular <br><b>MASTER CHEFS</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+            </div>
+
+                    <div>
+
+                        <p style="color: orange;  font-size: 35px; font-family: cursive; text-align: center;" class="f" data-aos="zoom-in-up">---Food
+                            Menu---</p>
+
+                        <h1 style=" padding-bottom: 40px; text-align: center;" class="m" data-aos="zoom-in-up"><b>Most Popular Items</b></h1>
+
+
+                        <div class="container">
+                            <div class="row my-3">
+                                <div class="col md-7" style="margin-left: 230px; margin-right: 220px;">
+                                    <div class="row">
+                                        <div class="col-md-4" data-aos="zoom-in-up">
+                                            <div class="row">
+                                                <div class="col-md-5 i">
+                                                    <i class="fa-solid fa-mug-saucer"
+                                                        style="font-size: 50px; color: orange;"></i>
+                                                </div>
+                                                <div class="col-md-7">
+                                                    <p>Popular <br><b>Breakfast</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4" data-aos="zoom-in-up">
+                                            <div class="row">
+                                                <div class="col-md-5 i">
+                                                    <i class="fa-sharp fa-solid fa-burger"
+                                                        style="font-size: 50px; color: orange;"></i>
+                                                </div>
+                                                <div class="col-md-7">
+                                                    <p>Special <br> <b>Launh</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4" data-aos="zoom-in-up">
+                                            <div class="row">
+                                                <div class="col-md-5 i">
+                                                    <i class="fa-solid fa-utensils"
+                                                        style="font-size: 50px; color: orange;"></i>
+                                                </div>
+                                                <div class="col-md-7">
+                                                    <p>Lovely <br> <b>Dinner</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-6" data-aos="fade-right">
+                                    <div class="row shadow-lg m-2 i">
+                                        <div class="col-md-4">
+                                            <div class="card ">
+                                                <img src="https://media.istockphoto.com/id/1265242741/photo/crispy-chicken-burger-with-cheese-tomato-onions-and-lettuce.jpg?s=612x612&w=0&k=20&c=5hopSnCK_oRenyY8zu5k-7nFTTJiLLZrqBoTqPbqKrU="
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p style="font-size: 30px;"><b>Chicken Burger</b></p>
+                                            <p style="font-size: 20px;">Lorem, ipsum dolor sit amet consectetur
+                                                adipisicing elit. Saepe.</p>
+                                            <p style="font-size: 30px; color: orange;"><b>$115</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6" data-aos="fade-left">
+                                    <div class="row  shadow-lg m-2 i">
+                                        <div class="col-md-4">
+                                            <div class="card ">
+                                                <img src="https://www.citypng.com/public/uploads/preview/fried-chicken-burger-png-image-116531548628ikmveuocz.png"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p style="font-size: 30px;"><b>Chicken Burger</b></p>
+                                            <p style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Provident.</p>
+                                            <p style="font-size: 30px; color: orange;"><b>$115</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-6" data-aos="fade-right">
+                                    <div class="row shadow-lg m-2 i">
+                                        <div class="col-md-4">
+                                            <div class="card ">
+                                                <img src="https://img.freepik.com/premium-photo/indian-food-kadai-paneer_55610-2024.jpg?w=2000"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p style="font-size: 30px;"><b>Chicken Burger</b></p>
+                                            <p style="font-size: 20px;">Lorem, ipsum dolor sit amet consectetur
+                                                adipisicing elit. Saepe.</p>
+                                            <p style="font-size: 30px; color: orange;"><b>$115</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6" data-aos="fade-left">
+                                    <div class="row shadow-lg m-2 i">
+                                        <div class="col-md-4">
+                                            <div class="card ">
+                                                <img src="https://www.teahub.io/photos/full/253-2538486_slider3-restaurant-food-pic-hd.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p style="font-size: 30px;"><b>Chicken Burger</b></p>
+                                            <p style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Provident.</p>
+                                            <p style="font-size: 30px; color: orange;"><b>$115</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-6" data-aos="fade-right">
+                                    <div class="row shadow-lg m-2 i">
+                                        <div class="col-md-4">
+                                            <div class="card ">
+                                                <img src="https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141353.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p style="font-size: 30px;"><b>Chicken Burger</b></p>
+                                            <p style="font-size: 20px;">Lorem, ipsum dolor sit amet consectetur
+                                                adipisicing elit. Saepe.</p>
+                                            <p style="font-size: 30px; color: orange;"><b>$115</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6" data-aos="fade-left">
+                                    <div class="row shadow-lg m-2 i">
+                                        <div class="col-md-4">
+                                            <div class="card ">
+                                                <img src="https://b.zmtcdn.com/data/pictures/chains/0/120320/2b15488e811955a33be5f3fd1a94d792.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p style="font-size: 30px;"><b>Chicken Burger</b></p>
+                                            <p style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Provident.</p>
+                                            <p style="font-size: 30px; color: orange;"><b>$115</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6" data-aos="fade-right">
+                                    <div class="row shadow-lg m-2 i">
+                                        <div class="col-md-4">
+                                            <div class="card ">
+                                                <img src="https://t3.ftcdn.net/jpg/02/75/39/20/360_F_275392051_53eksOq0aavTRaW9KYgnTbTgOG1Vuysq.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p style="font-size: 30px;"><b>Chicken Burger</b></p>
+                                            <p style="font-size: 20px;">Lorem, ipsum dolor sit amet consectetur
+                                                adipisicing elit. Saepe.</p>
+                                            <p style="font-size: 30px; color: orange;"><b>$115</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6" data-aos="fade-left">
+                                    <div class="row shadow-lg m-2 i">
+                                        <div class="col-md-4">
+                                            <div class="card ">
+                                                <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2022/01/Famous-Food-Of-South-India.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p style="font-size: 30px;"><b>Chicken Burger</b></p>
+                                            <p style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit. Provident.</p>
+                                            <p style="font-size: 30px; color: orange;"><b>$115</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div>
+
+                        <div class="container" style="margin-top: 30px; margin-bottom: 30px;">
+                            <div class="row">
+                                <div class="col-md-6" data-aos="zoom-in">
+                                    <div class="card i">
+                                        <img src="https://www.ktsm.com/wp-content/uploads/sites/38/2023/02/GettyImages-1285009750.jpg?w=2560&h=1440&crop=1"
+                                            alt="" style="height: 450px;">
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 bg-dark i" data-aos="zoom-in">
+
+                                    <p style="font-size: 25px; color: orange; font-family: cursive;">
+                                        <b>Reservation----</b></p>
+
+                                    <h1 class="text-white"><b>Book A Table Online</b></h1>
+
+                                    <div class="row ">
+
+
+
+                                        <form action="">
+
+                                            <div class="form-group">
+
+                                                <div class="row m-2">
+                                                    <div class="col-md-6">
+                                                        <input type="text" placeholder="Your Name"
+                                                            class="form-control p-3">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <input type="text" placeholder="Your Email"
+                                                            class="form-control p-3">
+                                                    </div>
+                                                </div>
+
+                                                <div class="row m-2">
+                                                    <div class="col-md-6">
+                                                        <input type="text" placeholder="Date & Time"
+                                                            class="form-control p-3">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <input type="text" placeholder="People"
+                                                            class="form-control p-3">
+                                                    </div>
+                                                </div>
+
+                                                <div class="row ">
+                                                    <div class="col">
+                                                        <textarea name="" style="border-radius: 10px;" id="tre" cols="70"
+                                                            rows="4" placeholder="special request"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col text-center">
+                                                        <a href=""
+                                                            class="btn btn-warning px-5 py-2 text-center my-3"><b>BOOK
+                                                                NOW</b></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <div style="margin-bottom: 30px; margin-top: 80px;">
+
+
+                            <p style="  color: orange; font-family: cursive; font-size: 25px;  text-align: center;" class="k" data-aos="zoom-in-up">----Team Membar----</p>
+
+                            <h1 class="s" style="text-align: center;" data-aos="zoom-in-up"><b>Our Master Chefs</b></h1>
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-3 shadow-lg " data-aos="zoom-out-up">
+                                        <div class="card p-2 ho" style="background-color: rgb(212, 203, 203);">
+                                        <!-- <div class="card p-2 ho" style="background-image: linear-gradient(purple,brown,rgb(129, 5, 119));"> -->
+
+                                            <img src="https://st4.depositphotos.com/1017986/25404/i/450/depositphotos_254046202-stock-photo-happy-male-indian-chef-in.jpg" alt="" style=" height: 180px; border-radius: 200px;">
+                                            <div class="card-body">
+                                                <p style="font-size: 21px; text-align: center;" class="text-dark"><b>Full Namw</b> <br>Designation</p> 
+
+
+                                                <div id="mah">
+                                                    <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                                                    <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                                                    <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                                                    <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 shadow-lg" data-aos="zoom-out-up">
+                                       <div class="card p-2 ho" style="background-color: rgb(212, 203, 203);">
+                                        <img src="https://c4.wallpaperflare.com/wallpaper/509/1016/8/master-chef-wallpaper-preview.jpg" alt="" style=" height: 180px; border-radius: 200px;">
+                                        <div class="card-body">
+                                            <p style="font-size: 21px; text-align: center;" class="text-dark"><b>Full Namw</b> <br>Designation</p> 
+
+                                            
+                                            <div id="mah">
+                                                <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                                                <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                                                <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                                                <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="col-md-3 shadow-lg" data-aos="zoom-out-up">
+                                        <div class="card p-2 ho" style="background-color: rgb(212, 203, 203);">
+                                            <img src="https://img.freepik.com/free-photo/image-cheerful-young-cook-uniform-standing-isolated-grey-wall_171337-5340.jpg" alt="" style=" height: 180px; border-radius: 200px;">
+                                            <div class="card-body">
+                                                <p style="font-size: 21px; text-align: center;" class="text-dark"><b>Full Namw</b> <br>Designation</p> 
+
+                                                
+                                                <div id="mah">
+                                                    <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                                                    <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                                                    <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                                                    <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 shadow-lg" data-aos="zoom-out-up">
+                                        <div class="card p-2 ho" style="background-color: rgb(212, 203, 203);">
+                                            <img src="https://t4.ftcdn.net/jpg/05/16/74/47/360_F_516744775_HsgL6tviKRkWOCiWznivuKtx0bYj9pjv.jpg" alt="" style=" height: 180px; border-radius: 200px;">
+                                            <div class="card-body">
+                                                <p style="font-size: 21px; text-align: center;" class="text-dark"><b>Full Namw</b> <br>Designation</p> 
+
+                                                
+                                                <div id="mah">
+                                                    <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                                                    <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                                                    <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                                                    <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div style="margin-bottom: 30px; margin-top: 80px;">
+
+
+                        <p style="font-size: 25px; font-family: cursive; color: orange; text-align: center;" class="k"  data-aos="zoom-in-up">-----Testimonial------</p>
+
+                        <h1 class="s" style="text-align: center;"  data-aos="zoom-in-up"><b>Our Clients Say!!!</b></h1>
+
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4" data-aos="fade-right">
+
+                                    <div class="card ho shadow-lg" style="background-color: rgb(212, 203, 203);">
+                                        <div class="card-body">
+                                            <p><i class="fa-solid fa-quote-left" style=" font-size: 40px;"></i></p>
+                                            <p class="text-dark">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae consequatur fuga velit incidunt aliquid neque animi dignissimos aut quos eveniet.</p>
+                                    
+                                            <div class="row">
+                                                <div class="col-md-4 i">
+                                                    <img src="https://thumbs.dreamstime.com/b/happy-person-portrait-smiling-woman-tanned-skin-curly-hair-happy-person-portrait-smiling-young-friendly-woman-197501184.jpg" alt="" style="height: 80px; width: 80px; border-radius: 40px;">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p style="font-size: 22px;" class="text-dark"><b>Client Name</b> <br>Profession </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-4" data-aos="fade-up">
+
+                                    <div class="card ho shadow-lg" style="background-color: rgb(212, 203, 203);">
+                                        <div class="card-body">
+                                            <p><i class="fa-solid fa-quote-left" style=" font-size: 40px;"></i></p>
+                                            <p class="text-dark">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae consequatur fuga velit incidunt aliquid neque animi dignissimos aut quos eveniet.</p>
+                                    
+                                            <div class="row">
+                                                <div class="col-md-4 i">
+                                                    <img src="https://thumbs.dreamstime.com/b/guy-approves-your-perfect-choice-cheerful-good-looking-man-t-shirt-showing-okay-gesture-like-something-smiling-as-agree-accept-164239230.jpg" alt="" style="height: 80px; width: 80px; border-radius: 40px;">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p style="font-size: 22px;" class="text-dark"><b>Client Name</b> <br>Profession </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-4" data-aos="fade-left">
+
+                                    <div class="card ho shadow-lg" style="background-color: rgb(212, 203, 203);">
+                                        <div class="card-body">
+                                            <p><i class="fa-solid fa-quote-left" style=" font-size: 40px;"></i></p>
+                                            <p class="text-dark">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae consequatur fuga velit incidunt aliquid neque animi dignissimos aut quos eveniet.</p>
+                                    
+                                            <div class="row">
+                                                <div class="col-md-4 i">
+                                                    <img src="https://thumbs.dreamstime.com/b/close-up-photo-beautiful-her-toothy-lady-both-arms-hands-open-palm-empty-space-advising-buy-buyer-pay-payment-customer-prices-143992430.jpg" alt="" style="height: 80px; width: 80px; border-radius: 40px;">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p style="font-size: 22px;" class="text-dark"><b>Client Name</b> <br>Profession </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="container my-4">
+                            <div class="row">
+                                <div class="col-md-4" data-aos="fade-right">
+
+                                    <div class="card ho shadow-lg" style="background-color: rgb(212, 203, 203);">
+                                        <div class="card-body">
+                                            <p><i class="fa-solid fa-quote-left" style=" font-size: 40px;"></i></p>
+                                            <p class="text-dark">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae consequatur fuga velit incidunt aliquid neque animi dignissimos aut quos eveniet.</p>
+                                    
+                                            <div class="row">
+                                                <div class="col-md-4 i">
+                                                    <img src="https://thumbs.dreamstime.com/b/happy-person-portrait-smiling-woman-tanned-skin-curly-hair-happy-person-portrait-smiling-young-friendly-woman-197501184.jpg" alt="" style="height: 80px; width: 80px; border-radius: 40px;">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p style="font-size: 22px;" class="text-dark"><b>Client Name</b> <br>Profession </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-4" data-aos="fade-up">
+
+                                    <div class="card ho shadow-lg" style="background-color: rgb(212, 203, 203);">
+                                        <div class="card-body">
+                                            <p><i class="fa-solid fa-quote-left" style=" font-size: 40px;"></i></p>
+                                            <p class="text-dark">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae consequatur fuga velit incidunt aliquid neque animi dignissimos aut quos eveniet.</p>
+                                    
+                                            <div class="row">
+                                                <div class="col-md-4 i">
+                                                    <img src="https://t3.ftcdn.net/jpg/02/00/90/24/360_F_200902415_G4eZ9Ok3Ypd4SZZKjc8nqJyFVp1eOD6V.jpg" alt="" style="height: 80px; width: 80px; border-radius: 40px;">
+                                                    
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p style="font-size: 22px;" class="text-dark"><b>Client Name</b> <br>Profession </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-4" data-aos="fade-left">
+
+                                    <div class="card ho shadow-lg" style="background-color: rgb(212, 203, 203);">
+                                        <div class="card-body">
+                                            <p><i class="fa-solid fa-quote-left" style=" font-size: 40px;"></i></p>
+                                            <p class="text-dark">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae consequatur fuga velit incidunt aliquid neque animi dignissimos aut quos eveniet.</p>
+                                    
+                                            <div class="row">
+                                                <div class="col-md-4 i">
+                                                    <img src="https://t3.ftcdn.net/jpg/02/55/90/80/360_F_255908013_dgxfJaBHYbL0p4z5qgOwSQmJn0deOJQr.jpg" alt="" style="height: 80px; width: 80px; border-radius: 40px;">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p style="font-size: 22px;" class="text-dark"><b>Client Name</b> <br>Profession </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+                        </div>
+
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4" data-aos="fade-right">
+
+                                    <div class="card ho shadow-lg" style="background-color: rgb(212, 203, 203);">
+                                        <div class="card-body">
+                                            <p><i class="fa-solid fa-quote-left" style=" font-size: 40px;"></i></p>
+                                            <p class="text-dark">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae consequatur fuga velit incidunt aliquid neque animi dignissimos aut quos eveniet.</p>
+                                    
+                                            <div class="row">
+                                                <div class="col-md-4 i">
+                                                    <img src="https://img.freepik.com/free-photo/indoor-shot-beautiful-happy-african-american-woman-smiling-cheerfully-keeping-her-arms-folded-relaxing-indoors-after-morning-lectures-university_273609-1270.jpg" alt="" style="height: 80px; width: 80px; border-radius: 40px;">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p style="font-size: 22px;" class="text-dark"><b>Client Name</b> <br>Profession </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-4" data-aos="fade-up">
+
+                                    <div class="card ho shadow-lg" style="background-color: rgb(212, 203, 203);">
+                                        <div class="card-body">
+                                            <p><i class="fa-solid fa-quote-left" style=" font-size: 40px;"></i></p>
+                                            <p class="text-dark">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae consequatur fuga velit incidunt aliquid neque animi dignissimos aut quos eveniet.</p>
+                                    
+                                            <div class="row">
+                                                <div class="col-md-4 i">
+                                                    <img src="https://st4.depositphotos.com/1049680/31608/i/600/depositphotos_316080368-stock-photo-chinese-woman-wearing-turtleneck-sweater.jpg" alt="" style="height: 80px; width: 80px; border-radius: 40px;">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p style="font-size: 22px;" class="text-dark"><b>Client Name</b> <br>Profession </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-4" data-aos="fade-left">
+
+                                    <div class="card ho shadow-lg" style="background-color: rgb(212, 203, 203);">
+                                        <div class="card-body">
+                                            <p><i class="fa-solid fa-quote-left" style=" font-size: 40px;"></i></p>
+                                            <p class="text-dark">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae consequatur fuga velit incidunt aliquid neque animi dignissimos aut quos eveniet.</p>
+                                    
+                                            <div class="row">
+                                                <div class="col-md-4 i">
+                                                    <img src="https://img.freepik.com/free-photo/attractive-european-girl-with-charming-smile-keeps-arms-folded-wears-round-spectacles_273609-18493.jpg" alt="" style="height: 80px; width: 80px; border-radius: 40px;">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p style="font-size: 22px;" class="text-dark"><b>Client Name</b> <br>Profession </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+
+
+
+
+
+
+
+
+
+
+
+                    <div id="ft" data-aos="zoom-in">
+
+
+                        <div class="container ft">
+                            <div class="row">
+                                <div class="col-md-3">
+
+                                    <h1 style="font-family: cursive; color: orange;"><b>Company---</b></h1>
+
+                                    <p style="cursor: pointer;">> About Us</p>
+                                    <p style="cursor: pointer;">> Contact Us</p>
+                                    <p style="cursor: pointer;">> Reservation</p>
+                                    <p style="cursor: pointer;">> Privacy Policy</p>
+                                    <p style="cursor: pointer;">Terms & Condition</p>
+
+
+                                </div>
+                                <div class="col-md-3">
+                                    <h1 style="font-family: cursive; color: orange;"><b>Contect---</b></h1>
+
+                                    <div class="row">
+                                        <div class="col-md-2"><i class="fa-solid fa-location-dot"></i></div>
+                                        <div class="col-md-10" style="cursor: pointer;"><p>123 Street, New York, USA</p></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2"><i class="fa-solid fa-phone"></i></div>
+                                        <div class="col-md-10" style="cursor: pointer;"><p>+01234567890</p></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2"><i class="fa-solid fa-envelope"></i></div>
+                                        <div class="col-md-10" style="cursor: pointer;"><p>mail@domain.com</p></div>
+                                    </div>
+                                    <div id="mh">
+                                        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                                        <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                                        <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                                        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-3">
+                                    <!-- <p style="color: orange; text-align: center;"><b>Opening---</b></p> -->
+                                    <h1 style="font-family: cursive; color: orange;"><b>Opening---</b></h1>
+                                    <p style="cursor: pointer;">Monday - Saturday</p>
+                                    <p style="cursor: pointer;">09AM - 09PM</p>
+                                    <p style="cursor: pointer;">Sunday</p>
+                                    <p style="cursor: pointer;">10AM - 08PM</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <h1 style="font-family: cursive; color: orange;"><b>Newsletter-</b></h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" placeholder="Your Email" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a href="" class="btn btn-warning" style="cursor: pointer;">Sign Up</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <script>
+        AOS.init(
+            {
+                duration:1000,
+                offset:200,
+            }
+        );
+      </script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            /* font-family: sans-serif; */
+        }
+
+        p {
+            font-family: serif;
+        }
+
+        .btnm {
+            padding-top: 10px;
+        }
+
+        .res {
+            padding-right: 180px;
+            padding-top: 10px;
+            color: rgb(236, 177, 14);
+            font-size: 30px;
+            /* cursor: pointer; */
+        }
+
+
+
+        .logo {
+            /* margin: 15px; */
+            position: relative;
+        }
+
+        #im {
+            height: 120px;
+            width: 120px;
+            /* cursor: pointer; */
+        }
+
+        .navbar {
+
+            font-size: 25px;
+            height: 120px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            /* position: relative; */
+        }
+
+        .navbar ul {
+            /* margin: 15px; */
+            /* list-style-type: none; */
+            position: relative;
+            display: flex;
+        }
+
+        .navbar ul li {
+            padding: 15px 20px;
+            list-style-type: none;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+
+            color: white;
+        }
+
+        .navbar ul li a:hover {
+
+
+            color: orange;
+        }
+
+
+
+        .content {
+            padding-top: 120px;
+            margin-left: 8%;
+            font-family: sans-serif;
+        }
+
+        .myimg {
+
+
+            background-image: url("   https://media.istockphoto.com/id/1097744990/photo/italian-pasta-spaghetti-with-meatballs-and-parmesan-cheese-in-black-plate-on-dark-rustic-wood.jpg?s=612x612&w=0&k=20&c=mokZoAi7dtawXKbkZ6qrDR-JW7-SH2si3PPycI3Z0Pg=");
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* height: 100%;
+            width: 100%; */
+            padding-bottom: 50px;
+        }
+    </style>
+
+    <style>
+        .ho:hover {
+
+            text-shadow: none !important;
+            box-sizing: border-box !important;
+            cursor: pointer !important;
+            transition: all 0.3s ease !important;
+            -webkit-transform: scale(1.1) !important;
+            transform: scale(1.1) !important;
+            z-index: 2;
+            background-color: orange;
+            color: white;
+        }
+    
+        .ho p i{
+            color: orange;
+        }
+
+        .ho p i:hover {
+
+            text-shadow: none !important;
+            box-sizing: border-box !important;
+            cursor: pointer !important;
+            transition: all 0.3s ease !important;
+            -webkit-transform: scale(1.1) !important;
+            transform: scale(1.1) !important;
+            z-index: 2;
+            background-color: orange;
+            color: white;
+            cursor: pointer;
+        }
+
+        .ho i:hover {
+            background-color: orange;
+            color: white;
+            cursor: pointer;
+        }
+
+        .ho i {
+            font-size: 60px;
+            color: orange;
+        }
+
+        .i:hover {
+            text-shadow: none !important;
+            box-sizing: border-box !important;
+            cursor: pointer !important;
+            transition: all 0.3s ease !important;
+            -webkit-transform: scale(1.1) !important;
+            transform: scale(1.1) !important;
+            z-index: 2;
+
+        }
+    </style>
+
+    <style>
+
+        #mah{
+            align-items: center;
+            padding-left: 20px;
+        }
+
+        #mah a i {
+            font-size: 25px; 
+            margin: 3px;
+            padding: 5px;
+            color: white;
+            background-color: orange;
+            border-radius: 20px;
+        }
+
+        #mah a i:hover{
+            background-color: blue;
+            text-shadow: none !important;
+            box-sizing: border-box !important;
+            cursor: pointer !important;
+            transition: all 0.3s ease !important;
+            -webkit-transform: scale(1.1) !important;
+            transform: scale(1.1) !important;
+            z-index: 2;
+
+        }
+
+        #mh{
+            align-items: center;
+            padding-left: 20px;
+        }
+
+        #mh a i {
+            font-size: 25px; 
+            margin: 3px;
+            padding: 5px;
+            color: white;
+            /* background-color: orange; */
+            border-radius: 20px;
+        }
+
+        #mh a i:hover{
+            background-color: blue;
+            text-shadow: none !important;
+            box-sizing: border-box !important;
+            cursor: pointer !important;
+            transition: all 0.3s ease !important;
+            -webkit-transform: scale(1.1) !important;
+            transform: scale(1.1) !important;
+            z-index: 2;
+
+        }
+
+        #ft{
+            /* background-image: linear-gradient(to right rgb(22, 22, 63) rgb(35, 35, 104)); */
+            background-color: rgb(15, 15, 61);
+            color: white;
+        }
+
+        body{
+            background-color: black;
+            color: white;
+        }
+
+
+    </style>
+<!-- 
+    <style>
+
+
+        .content{
+
+
+            animation-name: sahil;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            animation-direction: reverse;
+            
+
+        }
+        @keyframes sahil{
+
+            form{
+                
+                margin-left: 0px;
+
+            }
+            to{
+                margin-left: 800px;
+            }
+
+        }
+
+
+          .mahi{
+
+
+            animation-name: msd;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            animation-direction: reverse;
+            animation-delay: 3s;
+            
+
+        }
+        @keyframes msd{
+
+            form{
+                
+                margin-left: 0px;
+
+            }
+            to{
+                margin-left: 250px;
+            }
+
+        }
+
+
+          .f{
+
+
+            animation-name: tom;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            /* animation-direction: reverse; */
+            /* animation-delay: 1s; */
+            
+
+        }
+        @keyframes tom{
+
+            form{
+                
+                margin-left: 0px;
+
+            }
+            to{
+                margin-left: 500px;
+            }
+
+        }
+
+          .m{
+
+
+            animation-name: manas;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            /* animation-direction: reverse; */
+            /* animation-delay: 1s; */
+            
+
+        }
+        @keyframes manas{
+
+            form{
+                
+                margin-left: 0px;
+
+            }
+            to{
+                margin-left: 480px;
+            }
+        
+        }
+
+    </style> -->
+
+    
+    <style>
+
+        body{
+            background-color: black;
+            color: white;
+            /* margin-left: 60px;
+            margin-right: 60px; */
+            align-content: center;
+            position: relative;
+            margin-right: 0;
+        }
+
+        #click{
+            display: none;
+        }
+
+        .menu-btn{
+            display: none;
+        }
+
+
+    </style>
+
+    
+<style>
+
+    @media screen and (max-width:700px) {
+/* 
+        #click{
+                display: block;
+        } */
+
+        .menu-btn{
+            display: block;
+            float: right;
+            color: aliceblue;
+        }
+
+        .navbar {
+
+       
+        
+        display: block;
+       /* align-items: center; */
+      text-align: center;
+      /* margin-top: 5px; */
+
+
+      
+/*          
+        height: 80px;
+       
+        display: flex;
+        justify-content: space-between;
+        background-color: black; */
+
+    }
+
+    .navbar ul{
+        display: none;
+        background-color: black;
+    }
+    
+    .res {
+        /* padding-right: 180px; */
+        /* padding-top: 10px; */
+        /* float: left;
+        color: rgb(236, 177, 14);
+        font-size: 30px; */
+        /* cursor: pointer; */
+        margin-right: 250px;
+    }
+
+    .menu-btn{
+        float: right;
+        margin-right: 80px;
+        top: 0;
+        padding-top: 50px;
+        display: block;
+    }
+    
+    #click:checked ~ ul {
+        display: block;
+        background-color: black;
+    
+
+    }
+
+    /* #click:checked ~ .myimg {
+       margin-top: 200px;
+    } */
+
+    .logo {
+        /* margin: 15px; */
+        
+        position: relative;
+        float: left;
+    }
+
+     
+    }
+
+
+
+
+    @media screen and (max-width:500px) {
+
+        /* #click{
+                display: block;
+        } */
+
+        .menu-btn{
+            display: block;
+        }
+
+        body{
+                align-items: center;
+             margin-right: auto;
+
+        }
+
+        #tre{
+            width: 410px;
+            margin-left: 20px;
+        }
+
+        .navbar {
+
+       
+        
+        display: block;
+       /* align-items: center; */
+      text-align: center;
+      /* margin-top: 5px; */
+
+
+      
+/*          
+        height: 80px;
+       
+        display: flex;
+        justify-content: space-between;
+        background-color: black; */
+
+    }
+
+    .navbar ul{
+        display: none;
+        background-color: black;
+        
+    }
+
+    .navbar ul li a{
+        cursor: pointer;
+    }
+    
+    .res {
+        /* padding-right: 180px; */
+        /* padding-top: 10px; */
+        /* float: left;
+        color: rgb(236, 177, 14);
+        font-size: 30px; */
+        /* cursor: pointer; */
+        margin-right: auto;
+    }
+
+    .menu-btn{
+        float: right;
+        margin-right: 80px;
+        top: 0;
+        padding-top: 50px;
+        display: block;
+    }
+    
+    #click:checked ~ ul {
+        display: block;
+        background-color: black;
+    
+
+    }
+
+    /* #click:checked ~ .myimg {
+       margin-top: 200px;
+    } */
+
+    .logo {
+        /* margin: 15px; */
+        
+        position: relative;
+        float: left;
+    }
+
+     
+    }
+
+
+
+        
+
+
+    
+
+
+
+
+</style>
+
+
+</head>
+
+<body>
+
+    <header>
+
+
+        <div class="navbar">
+
+            <div class="logo i">
+                <img src="https://s.tmimgcdn.com/scr/800x500/212900/spoon-and-fork-restaurant-logo_212966-original.png"
+                    alt="" id="im">
+            </div>
+            <div class="res i">
+                <p>Restorent</p>
+            </div>
+
+            <ul>
+                <li><a href="food.index.html">HOME</a></li>
+                <li><a href="f.about.html">ABOUT</a></li>
+                <li><a href="f.service.html"  >SERVICE</a></li>
+                <li><a href="f.menu.html"  style="color: orange;">MENU</a></li>
+                <li><a href="f.pages.html">PAGES</a></li>
+                <li><a href="f.contact.html">CONTACT</a></li>
+                <div class="btnm">
+                    <!-- <a href="" class="btn btn-warning  p-2 i"><b>BOOK A TABLE</b></a> -->
+                    <a href="f.book.table.html" class="btn btn-warning p-2 i"><b>BOOK A TABLE</b></a>
+                </div>
+
+            </ul>
+
+        </div>
+
+
+    </header>
+
+    <main>
+
+
+        <div style="background-color: rgb(26, 26, 77); padding-top: 180px; padding-bottom: 180px;">
+           <div data-aos="zoom-in">
+            <h1 style="text-align: center; font-size: 55px; color: white;"><b>Food Menu </b></h1>
+            <p style="text-align: center; font-size: 25px; font-family: serif;"> 
+             <a href="" class="text-warning" style="text-decoration: none;">Home / </a>
+             <a href="" class="text-warning" style="text-decoration: none;">Pages / </a>
+             <a href="" class="text-white" style="text-decoration: none;"> menu</a>
+          </p>
+           </div>
+        </div>
+
+
+
+
+        
+        
+        <div style="margin-bottom: 10%;">
+
+            <p style="color: orange;  font-size: 35px; font-family: cursive; text-align: center;" class="f" data-aos="zoom-in">---Food
+                Menu---</p>
+
+            <h1 style=" padding-bottom: 40px; text-align: center;" class="m"  data-aos="zoom-in" ><b>Most Popular Items</b></h1>
+
+
+            <div class="container">
+                <div class="row my-3">
+                    <div class="col md-7" style="margin-left: 230px; margin-right: 220px;">
+                        <div class="row">
+                            <div class="col-md-4" data-aos="zoom-in-right">
+                                <div class="row">
+                                    <div class="col-md-5 i">
+                                        <i class="fa-solid fa-mug-saucer"
+                                            style="font-size: 50px; color: orange;"></i>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <p>Popular <br><b>Breakfast</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4" data-aos="zoom-in">
+                                <div class="row">
+                                    <div class="col-md-5 i">
+                                        <i class="fa-sharp fa-solid fa-burger"
+                                            style="font-size: 50px; color: orange;"></i>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <p>Special <br> <b>Launh</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4" data-aos="zoom-in-left">
+                                <div class="row">
+                                    <div class="col-md-5 i">
+                                        <i class="fa-solid fa-utensils"
+                                            style="font-size: 50px; color: orange;"></i>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <p>Lovely <br> <b>Dinner</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-6" data-aos="fade-right">
+                        <div class="row shadow-lg m-2 i">
+                            <div class="col-md-4">
+                                <div class="card ">
+                                    <img src="https://media.istockphoto.com/id/1265242741/photo/crispy-chicken-burger-with-cheese-tomato-onions-and-lettuce.jpg?s=612x612&w=0&k=20&c=5hopSnCK_oRenyY8zu5k-7nFTTJiLLZrqBoTqPbqKrU="
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <p style="font-size: 30px;"><b>Chicken Burger</b></p>
+                                <p style="font-size: 20px;">Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. Saepe.</p>
+                                <p style="font-size: 30px; color: orange;"><b>$115</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-left">
+                        <div class="row  shadow-lg m-2 i">
+                            <div class="col-md-4">
+                                <div class="card ">
+                                    <img src="https://www.citypng.com/public/uploads/preview/fried-chicken-burger-png-image-116531548628ikmveuocz.png"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <p style="font-size: 30px;"><b>Chicken Burger</b></p>
+                                <p style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Provident.</p>
+                                <p style="font-size: 30px; color: orange;"><b>$115</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-6" data-aos="fade-right">
+                        <div class="row shadow-lg m-2 i">
+                            <div class="col-md-4">
+                                <div class="card ">
+                                    <img src="https://img.freepik.com/premium-photo/indian-food-kadai-paneer_55610-2024.jpg?w=2000"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <p style="font-size: 30px;"><b>Chicken Burger</b></p>
+                                <p style="font-size: 20px;">Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. Saepe.</p>
+                                <p style="font-size: 30px; color: orange;"><b>$115</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-left">
+                        <div class="row shadow-lg m-2 i">
+                            <div class="col-md-4">
+                                <div class="card ">
+                                    <img src="https://www.teahub.io/photos/full/253-2538486_slider3-restaurant-food-pic-hd.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <p style="font-size: 30px;"><b>Chicken Burger</b></p>
+                                <p style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Provident.</p>
+                                <p style="font-size: 30px; color: orange;"><b>$115</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-6" data-aos="fade-right">
+                        <div class="row shadow-lg m-2 i">
+                            <div class="col-md-4">
+                                <div class="card ">
+                                    <img src="https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141353.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <p style="font-size: 30px;"><b>Chicken Burger</b></p>
+                                <p style="font-size: 20px;">Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. Saepe.</p>
+                                <p style="font-size: 30px; color: orange;"><b>$115</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-left">
+                        <div class="row shadow-lg m-2 i">
+                            <div class="col-md-4">
+                                <div class="card ">
+                                    <img src="https://b.zmtcdn.com/data/pictures/chains/0/120320/2b15488e811955a33be5f3fd1a94d792.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <p style="font-size: 30px;"><b>Chicken Burger</b></p>
+                                <p style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Provident.</p>
+                                <p style="font-size: 30px; color: orange;"><b>$115</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6" data-aos="fade-right">
+                        <div class="row shadow-lg m-2 i">
+                            <div class="col-md-4">
+                                <div class="card ">
+                                    <img src="https://t3.ftcdn.net/jpg/02/75/39/20/360_F_275392051_53eksOq0aavTRaW9KYgnTbTgOG1Vuysq.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <p style="font-size: 30px;"><b>Chicken Burger</b></p>
+                                <p style="font-size: 20px;">Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. Saepe.</p>
+                                <p style="font-size: 30px; color: orange;"><b>$115</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-left">
+                        <div class="row shadow-lg m-2 i">
+                            <div class="col-md-4">
+                                <div class="card ">
+                                    <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2022/01/Famous-Food-Of-South-India.jpg"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <p style="font-size: 30px;"><b>Chicken Burger</b></p>
+                                <p style="font-size: 20px;">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Provident.</p>
+                                <p style="font-size: 30px; color: orange;"><b>$115</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div id="ft"  data-aos="zoom-in">
+
+
+                        <div class="container ft">
+                            <div class="row">
+                                <div class="col-md-3">
+
+                                    <h1 style="font-family: cursive; color: orange;"><b>Company---</b></h1>
+
+                                    <p>> About Us</p>
+                                    <p>> Contact Us</p>
+                                    <p>> Reservation</p>
+                                    <p>> Privacy Policy</p>
+                                    <p>Terms & Condition</p>
+
+
+                                </div>
+                                <div class="col-md-3">
+                                    <h1 style="font-family: cursive; color: orange;"><b>Contect---</b></h1>
+
+                                    <div class="row">
+                                        <div class="col-md-2"><i class="fa-solid fa-location-dot"></i></div>
+                                        <div class="col-md-10"><p>123 Street, New York, USA</p></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2"><i class="fa-solid fa-phone"></i></div>
+                                        <div class="col-md-10"><p>+01234567890</p></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2"><i class="fa-solid fa-envelope"></i></div>
+                                        <div class="col-md-10"><p>mail@domain.com</p></div>
+                                    </div>
+                                    <div id="mh">
+                                        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                                        <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                                        <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                                        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-3">
+                                    <!-- <p style="color: orange; text-align: center;"><b>Opening---</b></p> -->
+                                    <h1 style="font-family: cursive; color: orange;"><b>Opening---</b></h1>
+                                    <p>Monday - Saturday</p>
+                                    <p>09AM - 09PM</p>
+                                    <p>Sunday</p>
+                                    <p>10AM - 08PM</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <h1 style="font-family: cursive; color: orange;"><b>Newsletter-</b></h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" placeholder="Your Email" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a href="" class="btn btn-warning">Sign Up</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    
+    <script>
+        AOS.init(
+            {
+                duration:1000,
+                offset:200,
+            }
+        );
+      </script>
+
+
+
+
+
+</body>
+
+</html>

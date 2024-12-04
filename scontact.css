@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding:0;
+    /* font-family: serif; */
+    font-family: serif;
+}
+
+
+#active{
+    color: rgb(25, 197, 228);
+}
+
+.navbar{
+    font-size: 25px;
+    display:flex ;
+    align-content: space-between;
+
+}
+.navbar ul{
+    display: flex;
+
+}
+
+.navbar ul li{
+    list-style-type: none;
+    padding: 15px 15px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+.navbar ul li a:hover{
+   color: rgb(25, 197, 228);
+}
+
+
+    .dropdown{
+        display: none;
+        /* width: 80px; */
+       position: inherit;
+         
+        /* transition: all 2s ease; */
+    }
+
+    .navbar ul li:hover .dropdown {
+         /* top: 100%;
+        left: 0;  */
+        /* transition: all 2s ease; */
+        display: block;
+       
+        background-color: orangered;
+        position: absolute;
+        border-radius: 20px;
+    }
+
+    .dropdown ul{
+        display: block;
+        /* transition: all 2s ease; */
+    }
+
+
+.logo{
+   padding:10px 40px ;
+   font-size: 50px;
+   color: rgb(54, 207, 207);
+   cursor: pointer;
+}
+
+.content{
+    padding-left: 50px;
+    padding-top: 8%;
+    padding-bottom: 14%;
+}
+
+.header{
+    background-image:  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(https://akm-img-a-in.tosshub.com/indiatoday/images/story/201509/philipsstory_647_091615042700.jpg?VersionId=IXEKlK1rlT7AjzOWsDqPSg9SwU8nuMlz);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    color: aliceblue;
+
+}
+
+
+.ho:hover{
+   
+    text-shadow: none !important;
+    box-sizing: border-box !important;
+    cursor: pointer !important;
+    transition: all 1s ease !important;
+    transform: scale(1.1) !important;
+    -webkit-transform: scale(1.1) !important;
+    /* z-index: 2; */
+}
+
+
+.sn:hover{
+   
+    text-shadow: none !important;
+    box-sizing: border-box !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    transform: scale(1.1) !important;
+    -webkit-transform: scale(1.1) !important;
+    /* z-index: 2; */
+}
+
+.foot{
+    margin-top: 10%;
+    background-color: rgb(8, 8, 48);
+    color: white;
+}
+/* 
+#footericon{
+
+} */
+
+
+#footericon i{
+    margin: 10px;
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+/* 
+#footericon i:hover{
+  background-color: rgb(35, 35, 209);
+} */
+
+#ser1{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#bts1{
+    padding: 15px 35px;
+    border: 2px solid orangered;
+    color: white;
+    background-color: orangered;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+#serimg1{
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.sn:hover{
+    text-shadow: none !important;
+    cursor: pointer !important;
+    box-sizing: border-box !important;
+    transition: all 0.5s ease !important;
+    transform: scale(1.1) ease !important;
+    -webkit-transform: scale(1.1) ease !important;
+    z-index: 2;
+    
+}
+
+#ser2{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#serimg3{
+    border-radius: 20px;
+}
+
+#main{
+
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+
+
+
+    /* resopnsive */
+
+    @media screen and (max-width:600px){
+        
+
+        .navbar{
+            font-size: 25px;
+            display:block ;
+           text-align: center;
+            align-content: space-between;
+            /* width: 100%; */
+        }
+        .navbar ul{
+            display: block;
+           
+        }
+        
+        .navbar ul li{
+            list-style-type: none;
+            padding: 15px 15px;
+        }
+        
+        .navbar ul li a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        
+        
+        .navbar ul li a:hover{
+           color: rgb(25, 197, 228);
+        }
+        
+        
+            }
+
+
+
+            
+            /* new */
+
+
+
+            
+
+
+#click{
+    display: none;
+}
+
+.menu-btn{
+    display: none;
+}
+
+#btt{
+border: 1px solid rgb(184, 181, 181); 
+padding: 10px 20px;
+ color: white;
+ width: 200px; 
+}
+
+#indo{
+    border: 2px solid white; 
+    background-color: aliceblue;
+     width: 100px; padding: 8px; 
+     color: green; 
+     margin-top: 440px; 
+     margin-left: 200px;
+}
+
+#thai{
+border: 2px solid white;
+ background-color: aliceblue; 
+ width: 90px;
+  padding: 8px; 
+  color: green;
+   margin-top: 100px;
+    margin-left: 200px;
+}
+
+
+@media screen and (max-width:700px) {
+    
+    #agf{
+    align-items: center;
+   padding-right: 400px;
+  
+} 
+
+.navbar{
+
+    font-size: 25px;
+    display: block;
+    text-align: center;
+
+ }
+
+.navbar ul{
+  
+    display: none;
+    
+}
+
+.menu-btn{
+    display: block;
+    color: aliceblue;
+    
+}
+
+#click:checked ~ ul{
+
+    display: block;
+
+}
+
+
+}
+
+
+@media screen and (max-width:390px) {
+    
+    body{
+        align-content: center;
+        /* padding-left: 40px; */
+    }
+
+    #agf{
+    align-items: center;
+   /* padding-right: 400px; */
+        /* display: none; */
+  
+} 
+.input-group{
+    height: 30px;
+    width: 200px;
+    align-items: center;
+    margin-left: 50px;
+    /* margin-left: 30%; */
+    /* display: none; */
+}
+.navbar{
+
+    font-size: 25px;
+    display: block;
+    text-align: center;
+
+ }
+
+.navbar ul{
+  
+    display: none;
+    
+}
+
+.menu-btn{
+    display: block;
+    color: aliceblue;
+    
+}
+
+#click:checked ~ ul{
+
+    display: block;
+
+}
+
+
+}

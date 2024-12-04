@@ -1,0 +1,1036 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family:serif;
+    
+}
+
+
+body{
+    background-color: white;
+    /* background-color: black; */
+    /* background-color: rgb(255, 255, 255); */
+    /* background-color: rgb(255, 251, 236); */
+}
+
+.container1 .navbar .logo{
+    font-size: 3vw;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.container1{
+ /* background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(./hotel\ home.avif);
+     */
+     /* background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(./hotel\ nav\ img.jpg);
+   */
+   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(./hotel\ nav\ second.jpg);
+  
+   
+   /* backdrop-filter: brightness(20%); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#active{
+    color: orangered;
+}
+.container1 .navbar .logo #lgo{
+    /* color: green; */
+    /* color: #f2e8e8; */
+    color: orangered;
+}
+.container1 .navbar{
+    display: flex;
+    font-size: 25px;
+   /* min-height: 30px; */
+   height: 15vh;
+    width: 100%;
+    /* background-color: blanchedalmond; */
+    /* background-color: darkolivegreen; */
+    /* background-color: darkslategrey; */
+}
+.container1 .navbar ul{
+    display: flex;
+
+}
+.container1 .navbar ul li{
+    list-style-type: none;
+    margin: 10px 20px;
+}
+.container1 .navbar ul li a{
+    text-decoration: none;
+   cursor: pointer;
+   /* color: black; */
+  color: #f7f1f1;
+   font-family: serif;
+}
+
+.container1 .navbar ul li a:hover{
+   color: orangered;
+
+}
+
+.container1 .content{
+    min-height: 90vh;
+    /* background-color: lightgreen; */
+    /* background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(./hotel\ home.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+}
+
+
+#concontent{
+    position: relative;
+    top: 140px;
+   
+}
+#content2line{
+    line-height: 2vw;
+}
+#cfirst{
+        font-size: 2vw;
+        font-family: serif;
+        color: #fff;
+}
+
+#csecond{
+        font-size: 5vw;
+        font-family: serif;
+        color: #f0ebeb;
+}
+
+#btn2{
+    
+    color: white;
+   
+    background-color: green;
+    padding: 10px 20px;
+    transition: all 0.3 ease;
+}
+#btn2:hover{
+    background-color: rgb(9, 180, 40);
+} 
+
+
+
+
+
+
+
+
+
+
+ .content2{
+    min-height: 80vh;
+    padding: 30px;
+}
+
+
+#csecondhead{
+    font-size: 5vw;
+}
+
+.conchild1{
+    width: 300px;
+    padding-left: 30px;
+}
+
+
+ .conchild2{
+    position: absolute;
+    width: auto;
+    height: 63vh;
+    top: 700px;
+    left: 500px;
+    overflow: hidden;
+    border-radius: 20px;
+   
+}
+
+.conchild2 #img1{
+    width: auto;
+    height: 63vh;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    box-sizing: border-box;
+    transition: all 1s ease;
+}
+
+.conchild2 #img1:hover{
+    transform: scale(1.5);
+    overflow: hidden;
+}
+
+ .conchild3{
+    position: relative; 
+    top: -85px;
+    left: 950px;
+    width: 210px;
+    height: 200px;
+    border-radius: 60%;
+   overflow: hidden;
+   /* border: 12px solid white; */
+}
+
+.conchild3 #img2{
+    width: 210px;
+    height: 200px;
+    border: 12px solid white;
+    transition: all 1s ease;
+    border-radius: 60%;
+   cursor: pointer;
+   box-sizing: border-box;
+}
+
+ .conchild3 #img2:hover{
+    transform: scale(1.5);
+    overflow: hidden;
+}
+
+ /* now we are creating about sectiion here */
+
+.content3{
+    min-height: 80vh;
+    padding: 30px;
+    /* background-color: blueviolet; */
+}
+
+.content3 .conthirdchild1{
+    position: relative;
+    top: 40px;
+    width: 500px;
+    height: auto;
+    padding-left: 30px;
+    border-radius: 25px;
+    overflow: hidden;
+
+}
+
+.conthirdchild1 #img3{
+    width: 500px;
+    height: auto;
+    border-radius: 25px;
+    transition: all 2s ease;
+    overflow: hidden;
+  cursor: pointer;
+
+}
+
+.conthirdchild1 #img3:hover{
+    transform: scale(0.1,0.1);
+    overflow: hidden;
+}
+
+
+
+.content3 .conthirdchild2{
+    position: relative;
+    top: -85px;
+    left: 300px;
+    width: 500px;
+    height: auto;
+    border: 12px solid white;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.conthirdchild2 #img4{
+    width: 500px;
+    height: 50vh;
+    overflow: hidden;
+    transition: all 1s ease;
+    cursor: pointer;
+    /* border-radius: 20px; */
+
+}
+
+.conthirdchild2 #img4:hover{
+    cursor: pointer;
+   box-sizing: border-box;
+    overflow: hidden;
+    transform: scale(1.5);
+}
+
+
+.content3 .conthirdchild3{
+    width: 300px;
+    text-align: center;
+    position: relative;
+    top: -600px;
+   float: right;
+   right: 30px;
+}
+
+#content4{
+    min-height:80vh ;
+    /* background-color: blueviolet; */
+}
+
+#content4{
+   position: relative;
+   left: 10px;
+}
+
+        /* now here is room images */
+
+
+#roomimg{
+    
+    height: 30vh;
+}
+
+#extragap{
+    margin-left: 15%;
+}
+    .extragap1{
+        margin-left: 15%;
+    }
+
+  /* this is hover contentcode  */
+/* 
+.ho:hover{
+    text-shadow: none !important;
+    box-sizing: border-box !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    -webkit-transform: scale(1.1) !important;
+    transform: scale(1.1) !important;
+    z-index: 2;
+} */
+
+
+
+
+
+
+.sun{
+    /* width: 500px;
+    height: auto;
+    border-radius: 25px; */
+    transition: all 2s ease;
+    overflow: hidden;
+  cursor: pointer;
+  border-radius: 20px;
+
+}
+
+.sun:hover{
+    transform: scale(0.1,0.1);
+    overflow: hidden;
+}
+
+
+
+#content5{
+    min-height: 100vh;
+    margin-top: 5%;
+    /* background-color: chartreuse; */
+}
+
+
+#galeryimg{
+    height: 40vh;
+    border-radius: 20px;
+    /* width: 300px; */
+    transition: all 0.5s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#galeryimg:hover{
+    transform: rotate(360deg);
+    overflow: hidden;
+    
+}
+
+
+.sum{
+    border-radius: 20px;
+}
+
+  /* image up css start here */
+
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#contents6{
+    margin-top: 10%;
+}
+
+#content6{
+    min-height: 100vh;
+    width: 100%;
+    /* margin-top: 10%; */
+    font-size: 16px;
+    /* background: #eee; */
+    color: #777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.centainers{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap ;
+   
+}
+.item-containers{
+   
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    margin: 24px;
+    width: 320px;
+    height: 570px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+.img-containers , .body-containers{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+.img-containers img{
+    width: 100%;
+    height: 50vh;
+}
+
+.body-containers{
+    position: relative;
+}
+
+.overlay{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    /* background-color:rgba(24, 83, 122, 0.6) ; */
+    background-color:rgba(136, 12, 97, 0.6) ;
+    opacity: 0;
+    transition: height linear 0.4s, opacity linear 0.2s ;
+}
+
+.item-containers:hover  .overlay{
+    opacity: 1;
+    height: 150px;
+}
+
+.event-info{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    position: relative;
+    top: -20px;
+
+}
+
+.title, .price{
+    color: #18537a;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 12px;
+}
+.info{
+    letter-spacing: 0.5px;
+    margin-bottom: 6px ;
+}
+
+.separator{
+    width: 20%;
+    height: 6px;
+    background-color: #17537a;
+    margin-bottom: 16px;
+}
+
+.additional-info{
+    border-top: 1px solid #bbb ;
+    margin-top: 12px;
+    padding: 28px;
+    padding-bottom: 0;
+}
+
+.additional-info info{
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.info i{
+    color: #18537a;
+    font-size: 1.1em;
+    margin-right: 4px;
+}
+ span{
+    color: #18537a;
+    font-weight: bolder;
+}
+.action{
+    color: #fff;
+    border:3px solid #fff ;
+    background-color: transparent;
+    position: absolute;
+    top:-100px ;
+    left: 50%;
+    transform: translate(-50%);
+    width: 60%;
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    text-transform: uppercase;
+    font-size:1.3em ;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: background-color 0.4s, top 0.4s;
+
+}
+
+.item-containers:hover .action{
+    top:50px;
+}
+.action:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+   /* here is footer */
+
+   .foot{
+    margin-top: 10%;
+    min-height: 60vh;
+    background-color: black;
+    color: white;
+   }
+
+   .youyel{
+    display: inline-block;
+    margin-top: 2%;
+   }
+   .youyel li{
+    list-style-type: none;
+    padding: 10px;
+   }
+   .youyel li a{
+    text-decoration: none;
+    color: white;
+   }
+
+   .footicon{
+    text-align: center;
+    font-size: 22px;
+    margin: 10px;
+   }
+   .footicon i{
+    margin: 10px;
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 20px;
+   }
+
+
+   
+
+#click{
+    display: none;
+}
+
+.menu-btn{
+    display: none;
+}
+
+
+
+
+   @media screen and (max-width:900px) {
+    
+    
+.container1 .navbar .logo #lgo{
+    /* color: green; */
+    /* color: #f2e8e8; */
+    color: orangered;
+    font-size: 40px;
+}
+.container1 .navbar{
+    display: inline-block;
+    font-size: 25px;
+   /* min-height: 30px; */
+   height: 15vh;
+    width: 100%;
+    /* align-items: center; */
+    text-align: center;
+    /* background-color: blanchedalmond; */
+    /* background-color: darkolivegreen; */
+    /* background-color: darkslategrey; */
+}
+.container1 .navbar ul{
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+}
+.container1 .navbar ul li{
+    list-style-type: none;
+    margin: 10px 20px;
+}
+.container1 .navbar ul li a{
+    text-decoration: none;
+   cursor: pointer;
+   /* color: black; */
+  color: #f7f1f1;
+   font-family: serif;
+}
+
+.container1 .navbar ul li a:hover{
+   color: orangered;
+
+}
+
+.container1 .content{
+    min-height: 90vh;
+    /* background-color: lightgreen; */
+    /* background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(./hotel\ home.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    text-align: center;
+}
+
+
+#concontent{
+    position: relative;
+    top: 140px;
+   
+}
+
+
+   
+.menu-btn{
+    display: block;
+    float: right;
+    margin-right: 40px;
+    }
+    
+    #click:checked ~ ul{
+    
+    display: block;
+    
+    
+    }
+/* 
+    #responsive1{
+        display: inline-block;
+    } */
+
+
+
+
+
+    .content2{
+        min-height: 80vh;
+        padding: 30px;
+        text-align: center;
+    }
+    
+    
+    .conchild1{
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   }
+
+   #content2line{
+    text-align: center;
+   }
+
+    
+ .conchild2{
+    position: absolute;
+    width: 100vw;
+    height: 50vh;
+    top: 1500px;
+    left: 30px;
+    padding-left: 30px;
+    overflow: hidden;
+    border-radius: 20px;
+   
+}
+
+.conchild2 #img1{
+    width: auto;
+    height: 50vh;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    box-sizing: border-box;
+    transition: all 1s ease;
+}
+
+.conchild2 #img1:hover{
+    transform: scale(1.5);
+    overflow: hidden;
+}
+
+ .conchild3{
+    position: relative; 
+    top: 270px;
+    left: 0;
+    /* left: 30px; */
+    /* padding-left: 30px; */
+    width: 210px;
+    height: 100px;
+    border-radius: 50%;
+   overflow: hidden;
+   /* border: 12px solid white; */
+}
+
+.conchild3 #img2{
+    width: 210px;
+    height: 100px;
+    border: 12px solid white;
+    transition: all 1s ease;
+    border-radius: 50%;
+   cursor: pointer;
+   box-sizing: border-box;
+}
+
+    
+#content2line{
+    line-height: 4vw;
+}
+
+
+ /* now we are creating about sectiion here */
+
+.content3{
+    min-height: 80vh;
+    padding: 30px;
+    /* background-color: blueviolet; */
+}
+
+.content3 .conthirdchild1{
+    position: relative;
+    top: 650px;
+    width: 500px;
+    height: auto;
+    padding-left: 30px;
+    border-radius: 25px;
+    overflow: hidden;
+
+}
+
+.conthirdchild1 #img3{
+    width: 500px;
+    height: auto;
+    border-radius: 25px;
+    transition: all 2s ease;
+    overflow: hidden;
+  cursor: pointer;
+
+}
+
+
+
+     
+
+.content3 .conthirdchild2{
+    position: relative;
+    top: 700px;
+    left: 30px;
+    width: 500px;
+    height: auto;
+    border: 12px solid white;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.conthirdchild2 #img4{
+    width: 500px;
+    height: 50vh;
+    overflow: hidden;
+    transition: all 1s ease;
+    cursor: pointer;
+    /* border-radius: 20px; */
+
+}
+
+.conthirdchild2 #img4:hover{
+    cursor: pointer;
+   box-sizing: border-box;
+    overflow: hidden;
+    transform: scale(1.5);
+}
+
+
+.content3 .conthirdchild3{
+    width: 300px;
+    text-align: center;
+    position: relative;
+    top: -600px;
+   float: right;
+   right: 30px;
+}
+
+
+
+#content4{
+    min-height:80vh ;
+    /* background-color: blueviolet; */
+}
+
+#content4{
+   /* position: relative; */
+   top: 500px;
+   left: 10px;
+   text-align: center;
+   align-items: center;
+}
+
+        /* now here is room images */
+
+
+#roomimg{
+    
+    height: 30vh;
+}
+
+#extragap{
+    /* margin-left: 15%; */
+    width: 70%;
+    height: auto;
+}
+    .extragap1{
+        /* margin-left: 15%; */
+        position: relative;
+        text-align: center;
+    }
+
+
+    
+
+#content5{
+    min-height: 100vh;
+    position: relative;
+    top: 600px;
+    /* margin-top: 5%; */
+    /* background-color: chartreuse; */
+}
+
+
+#galeryimg{
+    height: 40vh;
+    border-radius: 20px;
+    /* width: 300px; */
+    transition: all 0.5s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#galeryimg:hover{
+    transform: rotate(360deg);
+    overflow: hidden;
+    
+}
+
+
+.sum{
+    border-radius: 20px;
+}
+
+
+
+
+#contents6{
+    /* margin-top: 10%; */
+    position: relative;
+    top: 700px;
+}
+
+#content6{
+    min-height: 100vh;
+    width: 100%;
+    /* margin-top: 10%; */
+    font-size: 16px;
+    /* background: #eee; */
+    color: #777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.centainers{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap ;
+   
+}
+
+
+
+
+   /* here is footer */
+
+   .foot{
+    /* margin-top: 10%; */
+    position: relative;
+    top: 800px;
+    min-height: 60vh;
+    background-color: black;
+    color: white;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   }
+
+
+
+   @media screen and (max-width:600px) {
+
+    .container1{
+        width: 100%;
+    }
+
+    
+ .conchild2{
+    position: absolute;
+    width: 70vw;
+    height: 30vh;
+    top: 1700px;
+    left: 30px;
+    padding-left: 30px;
+    overflow: hidden;
+    border-radius: 20px;
+   
+}
+
+.conchild2 #img1{
+    width: 70vw;
+    height: 30vh;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    box-sizing: border-box;
+    transition: all 1s ease;
+}
+
+.conchild2 #img1:hover{
+    transform: scale(1.5);
+    overflow: hidden;
+}
+
+ .conchild3{
+    position: relative; 
+    top: 270px;
+    left: 0;
+    /* left: 30px; */
+    /* padding-left: 30px; */
+    width: 210px;
+    height: 100px;
+    border-radius: 50%;
+   overflow: hidden;
+   /* border: 12px solid white; */
+}
+
+.conchild3 #img2{
+    width: 210px;
+    height: 100px;
+    border: 12px solid white;
+    transition: all 1s ease;
+    border-radius: 50%;
+   cursor: pointer;
+   box-sizing: border-box;
+}
+
+    
+#content2line{
+    line-height: 4vw;
+}
+
+
+ /* now we are creating about sectiion here */
+
+.content3{
+    min-height: 80vh;
+    padding: 30px;
+    /* background-color: blueviolet; */
+}
+
+.content3 .conthirdchild1{
+    position: relative;
+    top: 500px;
+    width: 500px;
+    height: auto;
+    padding-left: 30px;
+    border-radius: 25px;
+    overflow: hidden;
+
+}
+
+.conthirdchild1 #img3{
+    width: 500px;
+    height: auto;
+    border-radius: 25px;
+    transition: all 2s ease;
+    overflow: hidden;
+  cursor: pointer;
+
+}
+
+
+
+.content3 .conthirdchild3{
+    width: 300px;
+    text-align: center;
+    position: relative;
+    top: -900px;
+   float: right;
+   right: 30px;
+}
+
+
+
+
+   }
+
+/*    
+@media screen and (max-width:900px) { */

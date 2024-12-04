@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family:serif;
+    
+}
+
+
+body{
+    background-color: white;
+    /* background-color: black; */
+    /* background-color: rgb(255, 255, 255); */
+    /* background-color: rgb(255, 251, 236); */
+}
+
+.container1 .navbar .logo{
+    font-size: 3vw;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.container1{
+ /* background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(./hotel\ home.avif);
+     */
+     /* background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(./hotel\ nav\ img.jpg);
+   */
+   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(./hotel\ nav\ second.jpg);
+  /* filter: grayscale(20%); */
+   
+   /* backdrop-filter: brightness(20%); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#active{
+    color: orangered;
+}
+.container1 .navbar .logo #lgo{
+    /* color: green; */
+    /* color: #f2e8e8; */
+    color: orangered;
+}
+.container1 .navbar{
+    display: flex;
+    font-size: 25px;
+   /* min-height: 30px; */
+   height: 15vh;
+    width: 100%;
+    /* background-color: blanchedalmond; */
+    /* background-color: darkolivegreen; */
+    /* background-color: darkslategrey; */
+}
+.container1 .navbar ul{
+    display: flex;
+
+}
+.container1 .navbar ul li{
+    list-style-type: none;
+    margin: 10px 20px;
+}
+.container1 .navbar ul li a{
+    text-decoration: none;
+   cursor: pointer;
+   /* color: black; */
+  color: #f7f1f1;
+   font-family: serif;
+}
+
+.container1 .navbar ul li a:hover{
+   color: orangered;
+
+}
+
+.container1 .content{
+    min-height: 70vh;
+    /* background-color: lightgreen; */
+    /* background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(./hotel\ home.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+}
+
+#concontent{
+    position: relative;
+    top: 140px;
+   
+}
+
+#cfirst{
+        font-size: 2vw;
+        font-family: serif;
+        color: #fff;
+}
+
+
+#csecond{
+    font-size: 5vw;
+    font-family: serif;
+    color: #f0ebeb;
+}
+
+
+
+/* for our gellary */
+
+#galleryhightfor{
+    height: 30vh;
+    border-radius: 20px;
+}
+
+.forhourfor{
+    position: relative;
+    overflow: hidden;
+    height: 30vh;
+    width: auto;
+   border: none;
+   
+}
+
+.forhourfor .forhourforsecond{
+    position: relative;
+    overflow: hidden;
+    height: 30vh;
+    width: auto;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.forhourfor .forhourforsecond:hover{
+    transform: scale(1.5);
+    overflow: hidden;
+}
+
+
+
+ /* here is footer */
+
+.foot{
+    margin-top: 10%;
+    min-height: 60vh;
+    background-color: black;
+    color: white;
+   }
+
+   .youyel{
+    display: inline-block;
+    margin-top: 2%;
+   }
+   .youyel li{
+    list-style-type: none;
+    padding: 10px;
+   }
+   .youyel li a{
+    text-decoration: none;
+    color: white;
+   }
+
+   .footicon{
+    text-align: center;
+    font-size: 22px;
+    margin: 10px;
+   }
+   .footicon i{
+    margin: 10px;
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 20px;
+   }
+
+/* yaha se content3 me javascript se css and other chize add hongi */
+
+
+
+
+
+
+
+
+
+
+
